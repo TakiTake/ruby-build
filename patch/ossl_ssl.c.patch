@@ -1,0 +1,15 @@
+--- ext/openssl/ossl_ssl.c	2010-12-24 03:24:00.000000000 +0000
++++ ext/openssl/ossl_ssl_fixed.c	2014-01-02 14:00:06.689378448 +0000
+@@ -107,9 +107,9 @@
+     OSSL_SSL_METHOD_ENTRY(TLSv1),
+     OSSL_SSL_METHOD_ENTRY(TLSv1_server),
+     OSSL_SSL_METHOD_ENTRY(TLSv1_client),
+-    OSSL_SSL_METHOD_ENTRY(SSLv2),
+-    OSSL_SSL_METHOD_ENTRY(SSLv2_server),
+-    OSSL_SSL_METHOD_ENTRY(SSLv2_client),
++    // OSSL_SSL_METHOD_ENTRY(SSLv2),
++    // OSSL_SSL_METHOD_ENTRY(SSLv2_server),
++    // OSSL_SSL_METHOD_ENTRY(SSLv2_client),
+     OSSL_SSL_METHOD_ENTRY(SSLv3),
+     OSSL_SSL_METHOD_ENTRY(SSLv3_server),
+     OSSL_SSL_METHOD_ENTRY(SSLv3_client),

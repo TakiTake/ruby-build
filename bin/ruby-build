@@ -537,6 +537,11 @@ build_package_copy() {
 
 before_install_package() {
   local stub=1
+
+  if [ "$1" == "ruby-1.9.2-p180" ]; then
+    echo "Applying patches to $1"
+    patch -u -p0 < "${RUBY_BUILD_ROOT}/patch/ossl_ssl.c.patch"
+  fi
 }
 
 after_install_package() {
